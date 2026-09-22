@@ -1,0 +1,504 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UiStrings_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: cb21eb36931960641866102c3dec9063, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1770012672
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178496
+    m_Localized: Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178497
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178498
+    m_Localized: Abandon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178499
+    m_Localized: Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178500
+    m_Localized: Coming soon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178501
+    m_Localized: TIC TAC XO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178502
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178503
+    m_Localized: Something went wrong. Please check your connection and try again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178504
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178505
+    m_Localized: TIC TAC XO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178506
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178507
+    m_Localized: Profile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178508
+    m_Localized: Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372800
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372801
+    m_Localized: Choose a mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372802
+    m_Localized: Single Player
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372803
+    m_Localized: "Play vs AI \xB7 pick difficulty"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372804
+    m_Localized: Local 2P
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372805
+    m_Localized: Same device
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372806
+    m_Localized: Online
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372807
+    m_Localized: Quickmatch or Ranked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372808
+    m_Localized: Soon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372809
+    m_Localized: Online play is coming soon!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372810
+    m_Localized: Board size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372811
+    m_Localized: align {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372812
+    m_Localized: Difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372813
+    m_Localized: Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372814
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372815
+    m_Localized: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372816
+    m_Localized: Adaptive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372817
+    m_Localized: Start Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372818
+    m_Localized: You
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372819
+    m_Localized: Rival
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372820
+    m_Localized: AI is thinking...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372821
+    m_Localized: Player 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372822
+    m_Localized: Player 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372823
+    m_Localized: Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372824
+    m_Localized: "You Win! \U0001F389"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372825
+    m_Localized: You Lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372826
+    m_Localized: Draw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372827
+    m_Localized: Player 1 Wins!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372828
+    m_Localized: Player 2 Wins!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372829
+    m_Localized: Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372830
+    m_Localized: Rematch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372831
+    m_Localized: Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372832
+    m_Localized: Profile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372833
+    m_Localized: '{0} Edit look {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372834
+    m_Localized: Win rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372835
+    m_Localized: Streak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372836
+    m_Localized: Match history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372837
+    m_Localized: Delete my data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372838
+    m_Localized: Delete my data?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372839
+    m_Localized: This permanently deletes your local progress, currency and match
+      history on this device. This cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372840
+    m_Localized: Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372841
+    m_Localized: Match History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372842
+    m_Localized: All
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372843
+    m_Localized: Single
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372844
+    m_Localized: Local
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372845
+    m_Localized: No matches yet. Play a game to see it here!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372846
+    m_Localized: Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372847
+    m_Localized: Loss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372848
+    m_Localized: Draw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372849
+    m_Localized: Player 1 won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372850
+    m_Localized: Player 2 won
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372851
+    m_Localized: '{0}m {1}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372852
+    m_Localized: '{0}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372853
+    m_Localized: Just now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372854
+    m_Localized: '{0}m ago'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372855
+    m_Localized: '{0}h ago'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372856
+    m_Localized: '{0}d ago'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372857
+    m_Localized: Store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372858
+    m_Localized: Pieces
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372859
+    m_Localized: Boards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372860
+    m_Localized: FX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372861
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372862
+    m_Localized: Coming soon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372863
+    m_Localized: New cosmetics are on their way.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372864
+    m_Localized: Currency purchases are coming soon!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372865
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372866
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372867
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372868
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372869
+    m_Localized: Delete account & data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372870
+    m_Localized: Delete account & data?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208380964864
+    m_Localized: Quickmatch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742080
+    m_Localized: Play a rival online now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742081
+    m_Localized: Ranked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742082
+    m_Localized: Competitive ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742083
+    m_Localized: Ranked is coming soon!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742084
+    m_Localized: Searching for a rival...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742085
+    m_Localized: Connecting to match...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742086
+    m_Localized: Taking too long?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742087
+    m_Localized: Play vs AI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742088
+    m_Localized: "\u25C9 Subscribed"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742089
+    m_Localized: "\u25CC Connecting..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742090
+    m_Localized: "\u25CC Offline"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742091
+    m_Localized: Abandon match?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742092
+    m_Localized: Your rival will win if you leave now. This cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742093
+    m_Localized: Your rival left the match.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955727769600
+    m_Localized: Ranked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546816
+    m_Localized: Leaderboard (Ranked)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546817
+    m_Localized: Ranked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546818
+    m_Localized: Placement {0}/{1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546819
+    m_Localized: Bronze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546820
+    m_Localized: Silver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546821
+    m_Localized: Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546822
+    m_Localized: Platinum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546823
+    m_Localized: Diamond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546824
+    m_Localized: Leaderboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546825
+    m_Localized: Loading leaderboard...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546826
+    m_Localized: The Ranked leaderboard isn't available here yet. Check back soon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546827
+    m_Localized: No ranked players yet on this board.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546828
+    m_Localized: Finish your placement matches to join the ranking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106386268160
+    m_Localized: Avatar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045376
+    m_Localized: Frame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045377
+    m_Localized: Banner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045378
+    m_Localized: Pieces
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045379
+    m_Localized: Board
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5904570035224576
+    m_Localized: '{0} Go to Store {1}'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

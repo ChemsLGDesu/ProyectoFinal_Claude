@@ -1,0 +1,20 @@
+{
+    "name": "TTTXO.Game.Editor",
+    "rootNamespace": "TTTXO.Game.Editor",
+    "references": [
+        "TTTXO.Game",
+        "Unity.Localization",
+        "Unity.Localization.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

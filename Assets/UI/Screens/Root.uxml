@@ -1,0 +1,324 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editor-extension-mode="False">
+    <Style src="/Assets/UI/Styles/main.uss" />
+    <ui:VisualElement name="app-root" class="app-root">
+
+        <ui:VisualElement name="screen-splash" class="screen screen-splash">
+            <ui:VisualElement class="splash-content">
+                <ui:VisualElement class="splash-logo">
+                    <ui:Label name="splash-title-label" class="splash-title" />
+                </ui:VisualElement>
+                <ui:VisualElement name="splash-spinner" class="spinner" />
+                <ui:Label name="splash-loading-label" class="loading-label" />
+                <ui:VisualElement name="splash-error-container" class="splash-error-container" style="display: none;">
+                    <ui:Label name="splash-error-label" class="splash-error-label" />
+                    <ui:Button name="splash-retry-button" class="primary-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-home" class="screen screen-home" style="display: none;">
+            <ui:VisualElement class="header-bar">
+                <ui:VisualElement class="profile-avatar-slot profile-avatar-slot--small">
+                    <ui:VisualElement name="home-avatar" class="profile-avatar profile-avatar--small" />
+                    <ui:VisualElement name="home-avatar-frame" class="profile-avatar-frame profile-avatar-frame--small" />
+                </ui:VisualElement>
+                <ui:Label name="home-player-name-label" class="player-name-label" />
+                <ui:VisualElement class="coin-badge-group">
+                    <ui:VisualElement class="coin-badge">
+                        <ui:VisualElement class="coin-dot coin-dot--soft" />
+                        <ui:Label name="home-soft-currency-label" class="coin-badge-value" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="coin-badge">
+                        <ui:VisualElement class="coin-dot coin-dot--hard" />
+                        <ui:Label name="home-hard-currency-label" class="coin-badge-value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="home-content">
+                <ui:Label name="home-title-label" class="screen-title" />
+                <ui:Button name="home-play-button" class="primary-button primary-button--large" />
+            </ui:VisualElement>
+            <ui:VisualElement class="home-secondary-row">
+                <ui:VisualElement name="home-profile-button" class="secondary-nav-button">
+                    <ui:VisualElement name="home-profile-badge" class="notification-dot" style="display: none;" />
+                    <ui:Label name="home-profile-icon-label" class="secondary-nav-icon" />
+                    <ui:Label name="home-profile-label" class="secondary-nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="home-store-button" class="secondary-nav-button">
+                    <ui:Label name="home-store-icon-label" class="secondary-nav-icon" />
+                    <ui:Label name="home-store-label" class="secondary-nav-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="home-settings-button" class="secondary-nav-button">
+                    <ui:Label name="home-settings-icon-label" class="secondary-nav-icon" />
+                    <ui:Label name="home-settings-label" class="secondary-nav-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-mode-select" class="screen screen-mode-select" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="mode-select-back-button" class="icon-button back-button" />
+                <ui:Label name="mode-select-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mode-card-list" class="card-column">
+                <ui:VisualElement name="mode-single-player-card" class="mode-card">
+                    <ui:VisualElement name="mode-single-player-icon" class="card-icon card-icon--image card-icon--single-player" />
+                    <ui:Label name="mode-single-player-title-label" class="card-title" />
+                    <ui:Label name="mode-single-player-description-label" class="card-description" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mode-local-multiplayer-card" class="mode-card">
+                    <ui:VisualElement name="mode-local-multiplayer-icon" class="card-icon card-icon--image card-icon--local-2p" />
+                    <ui:Label name="mode-local-multiplayer-title-label" class="card-title" />
+                    <ui:Label name="mode-local-multiplayer-description-label" class="card-description" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mode-online-card" class="mode-card">
+                    <ui:VisualElement name="mode-online-icon" class="card-icon card-icon--image card-icon--online" />
+                    <ui:Label name="mode-online-title-label" class="card-title" />
+                    <ui:Label name="mode-online-description-label" class="card-description" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="mode-online-submenu" class="card-column" style="display: none;">
+                <ui:VisualElement name="mode-online-quickmatch-card" class="mode-card">
+                    <ui:Label name="mode-online-quickmatch-icon-label" class="card-icon" />
+                    <ui:Label name="mode-online-quickmatch-title-label" class="card-title" />
+                    <ui:Label name="mode-online-quickmatch-description-label" class="card-description" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mode-online-ranked-card" class="mode-card">
+                    <ui:Label name="mode-online-ranked-icon-label" class="card-icon" />
+                    <ui:Label name="mode-online-ranked-title-label" class="card-title" />
+                    <ui:Label name="mode-online-ranked-description-label" class="card-description" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-board-select" class="screen screen-board-select" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="board-select-back-button" class="icon-button back-button" />
+                <ui:Label name="board-select-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:ScrollView mode="Vertical" class="board-select-content">
+                <ui:Label name="board-size-section-label" class="section-label" />
+                <ui:VisualElement name="board-size-list" class="grid-2col" />
+                <ui:VisualElement name="difficulty-section" class="difficulty-section">
+                    <ui:Label name="difficulty-section-label" class="section-label" />
+                    <ui:VisualElement name="difficulty-list" class="difficulty-list" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button name="board-select-confirm-button" class="primary-button board-select-confirm" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-matchmaking" class="screen screen-matchmaking" style="display: none;">
+            <ui:VisualElement class="matchmaking-content">
+                <ui:VisualElement class="spinner" />
+                <ui:Label name="matchmaking-elapsed-label" class="matchmaking-elapsed-label" />
+                <ui:Label name="matchmaking-status-label" class="matchmaking-status-label" />
+                <ui:VisualElement name="matchmaking-fallback-card" class="card matchmaking-fallback-card" style="display: none;">
+                    <ui:Label name="matchmaking-fallback-title-label" class="matchmaking-fallback-title-label" />
+                    <ui:Button name="matchmaking-fallback-ai-button" class="primary-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="matchmaking-cancel-button" class="secondary-button matchmaking-cancel-button" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-game" class="screen screen-game" style="display: none;">
+            <ui:VisualElement class="game-top-bar">
+                <ui:VisualElement name="game-wire-chip" class="chip game-wire-chip" style="display: none;">
+                    <ui:VisualElement name="game-wire-chip-dot" class="wire-chip-dot" />
+                    <ui:Label name="game-wire-chip-label" class="chip-label" />
+                </ui:VisualElement>
+                <ui:VisualElement class="game-top-bar-spacer" />
+                <ui:Button name="game-pause-button" class="icon-button" />
+            </ui:VisualElement>
+            <ui:VisualElement class="turn-bar">
+                <ui:VisualElement name="turn-side-home" class="turn-side">
+                    <ui:VisualElement class="profile-avatar-slot profile-avatar-slot--small">
+                        <ui:VisualElement name="game-avatar" class="profile-avatar profile-avatar--small" />
+                        <ui:VisualElement name="game-avatar-frame" class="profile-avatar-frame profile-avatar-frame--small" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="turn-side-home-dot" class="turn-dot" />
+                    <ui:Label name="turn-side-home-label" class="turn-side-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="turn-timer-chip" class="chip turn-timer-chip" style="display: none;">
+                    <ui:Label name="turn-timer-label" class="chip-label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="turn-side-away" class="turn-side">
+                    <ui:VisualElement name="turn-side-away-dot" class="turn-dot" />
+                    <ui:Label name="turn-side-away-label" class="turn-side-label" />
+                    <ui:VisualElement class="profile-avatar-slot profile-avatar-slot--small">
+                        <ui:VisualElement name="game-rival-avatar" class="profile-avatar profile-avatar--small" />
+                        <ui:VisualElement name="game-rival-frame" class="profile-avatar-frame profile-avatar-frame--small profile-avatar-frame--neon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="board-container" class="board-container" />
+            <ui:VisualElement name="pause-overlay" class="overlay pause-overlay" style="display: none;">
+                <ui:VisualElement class="pause-panel">
+                    <ui:Label name="pause-title-label" class="screen-title" />
+                    <ui:Button name="pause-resume-button" class="primary-button" />
+                    <ui:Button name="pause-quit-button" class="secondary-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-result" class="screen screen-result" style="display: none;">
+            <ui:Label name="result-status-label" class="result-status-label" />
+            <ui:VisualElement class="card reward-card">
+                <ui:Label name="result-reward-title-label" class="reward-card-title" />
+                <ui:VisualElement class="reward-card-value-row">
+                    <ui:VisualElement class="coin-dot coin-dot--soft" />
+                    <ui:Label name="result-reward-label" class="reward-card-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="result-ranked-card" class="card ranked-card" style="display: none;">
+                <ui:Label name="result-ranked-card-title-label" class="reward-card-title" />
+                <ui:Label name="result-ranked-mmr-label" class="ranked-mmr-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="button-row">
+                <ui:Button name="result-rematch-button" class="primary-button" />
+                <ui:Button name="result-home-button" class="secondary-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-profile" class="screen screen-profile" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="profile-back-button" class="icon-button back-button" />
+                <ui:Label name="profile-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:ScrollView mode="Vertical" class="profile-content">
+                <ui:VisualElement name="profile-banner" class="profile-banner profile-banner--neon">
+                    <ui:VisualElement class="profile-avatar-slot">
+                        <ui:VisualElement name="profile-avatar" class="profile-avatar profile-avatar--fox" />
+                        <ui:VisualElement name="profile-avatar-frame" class="profile-avatar-frame profile-avatar-frame--neon" />
+                    </ui:VisualElement>
+                    <ui:Label name="profile-name-label" class="profile-name-label" />
+                    <ui:VisualElement name="profile-edit-look-link" class="link-row">
+                        <ui:Label name="profile-edit-look-label" class="link-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="profile-equip-panel" class="equip-panel" style="display: none;">
+                        <ui:Label name="profile-equip-avatars-title" class="equip-section-label" />
+                        <ui:VisualElement name="profile-avatar-options" class="equip-row" />
+                        <ui:Label name="profile-equip-frames-title" class="equip-section-label" />
+                        <ui:VisualElement name="profile-frame-options" class="equip-row" />
+                        <ui:Label name="profile-equip-banners-title" class="equip-section-label" />
+                        <ui:VisualElement name="profile-banner-options" class="equip-row" />
+                        <ui:Label name="profile-equip-pieces-title" class="equip-section-label" />
+                        <ui:VisualElement name="profile-piece-skin-options" class="equip-row" />
+                        <ui:Label name="profile-equip-boards-title" class="equip-section-label" />
+                        <ui:VisualElement name="profile-board-skin-options" class="equip-row" />
+                        <ui:VisualElement name="profile-store-link" class="link-row">
+                            <ui:Label name="profile-store-link-label" class="link-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="stats-row">
+                    <ui:VisualElement class="stat-box">
+                        <ui:Label name="profile-winrate-value-label" class="stat-value" />
+                        <ui:Label name="profile-winrate-caption-label" class="stat-caption" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stat-box">
+                        <ui:Label name="profile-streak-value-label" class="stat-value" />
+                        <ui:Label name="profile-streak-caption-label" class="stat-caption" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="profile-ranked-section" class="card profile-ranked-section">
+                    <ui:Label name="profile-ranked-section-title-label" class="section-label" />
+                    <ui:VisualElement name="profile-ranked-board3-row" class="profile-ranked-row">
+                        <ui:VisualElement name="profile-ranked-board3-badge" class="tier-badge" style="display: none;" />
+                        <ui:Label name="profile-ranked-board3-size-label" class="profile-ranked-board-label" />
+                        <ui:Label name="profile-ranked-board3-value-label" class="profile-ranked-value-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="profile-ranked-board6-row" class="profile-ranked-row">
+                        <ui:VisualElement name="profile-ranked-board6-badge" class="tier-badge" style="display: none;" />
+                        <ui:Label name="profile-ranked-board6-size-label" class="profile-ranked-board-label" />
+                        <ui:Label name="profile-ranked-board6-value-label" class="profile-ranked-value-label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="profile-history-button" class="list-item">
+                    <ui:Label name="profile-history-label" class="list-item-label" />
+                    <ui:Label name="profile-history-chevron-label" class="list-item-chevron" />
+                </ui:VisualElement>
+                <ui:VisualElement name="profile-leaderboard-button" class="list-item">
+                    <ui:Label name="profile-leaderboard-label" class="list-item-label" />
+                    <ui:Label name="profile-leaderboard-chevron-label" class="list-item-chevron" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button name="profile-delete-data-button" class="danger-button" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-match-history" class="screen screen-match-history" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="match-history-back-button" class="icon-button back-button" />
+                <ui:Label name="match-history-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="match-history-filter-list" class="chip-row" />
+            <ui:ScrollView mode="Vertical" name="match-history-list" class="match-history-list" />
+            <ui:Label name="match-history-empty-label" class="empty-state-label" style="display: none;" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-store" class="screen screen-store" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="store-back-button" class="icon-button back-button" />
+                <ui:Label name="store-title-label" class="screen-header-title" />
+                <ui:VisualElement class="coin-badge-group">
+                    <ui:VisualElement class="coin-badge">
+                        <ui:VisualElement class="coin-dot coin-dot--hard" />
+                        <ui:Label name="store-hard-currency-label" class="coin-badge-value" />
+                    </ui:VisualElement>
+                    <ui:Button name="store-add-currency-button" class="icon-button coin-add-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="store-tab-list" class="tab-row" />
+            <ui:ScrollView mode="Vertical" class="store-content">
+                <ui:VisualElement name="store-item-grid" class="grid-2col" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-settings" class="screen screen-settings" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="settings-back-button" class="icon-button back-button" />
+                <ui:Label name="settings-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:ScrollView mode="Vertical" class="settings-content">
+                <ui:VisualElement class="card settings-card">
+                    <ui:Label name="settings-language-label" class="section-label" />
+                    <ui:DropdownField name="settings-language-dropdown" class="settings-dropdown" />
+                    <ui:Label name="settings-language-note-label" class="settings-note" />
+                </ui:VisualElement>
+                <ui:VisualElement class="card settings-card">
+                    <ui:Label name="settings-sound-label" class="section-label" />
+                    <ui:Slider name="settings-sound-slider" low-value="0" high-value="1" class="settings-slider" />
+                    <ui:Label name="settings-music-label" class="section-label" />
+                    <ui:Slider name="settings-music-slider" low-value="0" high-value="1" class="settings-slider" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button name="settings-delete-account-button" class="danger-button" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="screen-leaderboard" class="screen screen-leaderboard" style="display: none;">
+            <ui:VisualElement class="screen-header">
+                <ui:Button name="leaderboard-back-button" class="icon-button back-button" />
+                <ui:Label name="leaderboard-title-label" class="screen-header-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="leaderboard-filter-list" class="chip-row" />
+            <ui:ScrollView mode="Vertical" name="leaderboard-list" class="match-history-list" />
+            <ui:Label name="leaderboard-status-label" class="empty-state-label" style="display: none;" />
+            <ui:Label name="leaderboard-placement-note-label" class="empty-state-label leaderboard-placement-note" style="display: none;" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="confirm-dialog-overlay" class="overlay" style="display: none;">
+            <ui:VisualElement class="confirm-dialog-panel">
+                <ui:Label name="confirm-dialog-title-label" class="screen-title" />
+                <ui:Label name="confirm-dialog-message-label" class="confirm-dialog-message" />
+                <ui:VisualElement class="button-row">
+                    <ui:Button name="confirm-dialog-cancel-button" class="secondary-button" />
+                    <ui:Button name="confirm-dialog-confirm-button" class="danger-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="toast" class="toast" style="display: none;">
+            <ui:Label name="toast-label" class="toast-label" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

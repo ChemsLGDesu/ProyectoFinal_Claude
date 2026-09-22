@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ugs-config-schemas.unity3d.com/v1/leaderboards.schema.json",
+  "Name": "Ranked 3x3",
+  "Id": "ranked_3x3",
+  "SortOrder": "desc",
+  "UpdateType": "keepLatest",
+  "ResetConfig": {
+    "Start": "2026-08-28T00:00:00Z",
+    "Schedule": "0 0 28 * *",
+    "Archive": true
+  }
+}

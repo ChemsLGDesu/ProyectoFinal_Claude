@@ -1,0 +1,71 @@
+{
+  "$schema": "https://ugs-config-schemas.unity3d.com/v1/remote-config.schema.json",
+  "entries": {
+    "BOARD_CONFIGS": [
+      { "size": 3, "winLength": 3, "modes": ["single_player", "local_multiplayer", "online_quickmatch", "ranked"] },
+      { "size": 6, "winLength": 4, "modes": ["single_player", "local_multiplayer", "online_quickmatch", "ranked"] }
+    ],
+    "AI_DIFFICULTY_PARAMS": [
+      { "difficulty": "easy", "boardSize": 3, "winProbability": 0.70, "blockProbability": 0.50, "blunderChance": 0.0, "searchDepth": 0 },
+      { "difficulty": "easy", "boardSize": 6, "winProbability": 0.70, "blockProbability": 0.50, "blunderChance": 0.0, "searchDepth": 0 },
+      { "difficulty": "easy", "boardSize": 9, "winProbability": 0.70, "blockProbability": 0.50, "blunderChance": 0.0, "searchDepth": 0 },
+      { "difficulty": "easy", "boardSize": 11, "winProbability": 0.70, "blockProbability": 0.50, "blunderChance": 0.0, "searchDepth": 0 },
+      { "difficulty": "medium", "boardSize": 3, "winProbability": 1.00, "blockProbability": 0.90, "blunderChance": 0.25, "searchDepth": 9 },
+      { "difficulty": "medium", "boardSize": 6, "winProbability": 1.00, "blockProbability": 0.90, "blunderChance": 0.25, "searchDepth": 2 },
+      { "difficulty": "medium", "boardSize": 9, "winProbability": 1.00, "blockProbability": 0.90, "blunderChance": 0.25, "searchDepth": 2 },
+      { "difficulty": "medium", "boardSize": 11, "winProbability": 1.00, "blockProbability": 0.90, "blunderChance": 0.25, "searchDepth": 2 },
+      { "difficulty": "hard", "boardSize": 3, "winProbability": 1.00, "blockProbability": 1.00, "blunderChance": 0.0, "searchDepth": 9 },
+      { "difficulty": "hard", "boardSize": 6, "winProbability": 1.00, "blockProbability": 1.00, "blunderChance": 0.05, "searchDepth": 4 },
+      { "difficulty": "hard", "boardSize": 9, "winProbability": 1.00, "blockProbability": 1.00, "blunderChance": 0.05, "searchDepth": 4 },
+      { "difficulty": "hard", "boardSize": 11, "winProbability": 1.00, "blockProbability": 1.00, "blunderChance": 0.05, "searchDepth": 4 }
+    ],
+    "AD_FREQUENCY_CAPS": {
+      "_placeholder": true,
+      "_note": "Valores provisorios, no finales - no hay ads implementados aun (ver Docs/03-Arquitectura-UGS-TicTacToe.md 'Ads/IAP mal configurados' y Docs/01-Directrices-Proyecto.md principio 1). Ajustar con game-designer antes del milestone de monetizacion.",
+      "interstitialMinSecondsBetween": 180,
+      "interstitialMinMatchesBetween": 3,
+      "rewardedDailyCap": 5,
+      "sessionInterstitialCap": 4
+    },
+    "MATCHMAKING_CONFIG": {
+      "abandonTimeoutMinutes": 3,
+      "waitCeilingSeconds": 45,
+      "ticketTtlSeconds": 180
+    },
+    "RANKED_CONFIG": {
+      "_note": "design-doc.md sección 6. Las temporadas son meses calendario anclados al 28 a las 00:00 UTC: seasonStartUnixSeconds = 1787875200 = 2026-08-28T00:00:00Z y seasonDurationMonths = 1. Ese anclaje DEBE coincidir con el ResetConfig.Start/Schedule de Assets/Leaderboards/ranked_3x3.lb y ranked_6x6.lb (hoy '0 0 28 * *' desde el mismo instante) - son dos superficies de deploy independientes que UGS no sincroniza sola. Lo verifica SeasonConfigAlignmentTests; ver también RankedSeasonCalculator.cs.",
+      "initialMmr": 1000,
+      "mmrFloor": 500,
+      "kPlacement": 40,
+      "kIntermediate": 32,
+      "kEstablished": 24,
+      "kHighMmr": 16,
+      "kHighMmrThreshold": 1600,
+      "placementMatches": 5,
+      "firstMoveEloBoard6": 50,
+      "repeatRivalDamping": [1.0, 1.0, 0.5, 0.5, 0.0],
+      "turnTimeoutSecondsBoard3": 20,
+      "turnTimeoutSecondsBoard6": 30,
+      "rewardWinBoard3": 10,
+      "rewardDrawBoard3": 4,
+      "rewardWinBoard6": 15,
+      "rewardDrawBoard6": 5,
+      "decayProtectedFloor": 1200,
+      "decayGraceDays": 7,
+      "decayPerDay": 25,
+      "seasonStartUnixSeconds": 1787875200,
+      "seasonDurationMonths": 1,
+      "tierNames": ["bronze", "silver", "gold", "platinum", "diamond"],
+      "tierMinMmr": [0, 900, 1100, 1300, 1500],
+      "tierSoftCurrency": [100, 200, 400, 700, 1200],
+      "top100BonusSoftCurrency": 500
+    }
+  },
+  "types": {
+    "BOARD_CONFIGS": "JSON",
+    "AI_DIFFICULTY_PARAMS": "JSON",
+    "AD_FREQUENCY_CAPS": "JSON",
+    "MATCHMAKING_CONFIG": "JSON",
+    "RANKED_CONFIG": "JSON"
+  }
+}

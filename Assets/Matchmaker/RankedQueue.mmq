@@ -1,0 +1,53 @@
+{
+  "$schema": "https://ugs-config-schemas.unity3d.com/v1/matchmaker/matchmaker-queue.schema.json",
+  "name": "ranked-queue",
+  "enabled": true,
+  "maxPlayersPerTicket": 1,
+  "defaultPool": {
+    "variants": [],
+    "name": "ranked-pool",
+    "enabled": true,
+    "timeoutSeconds": 180,
+    "matchLogic": {
+      "name": "RankedRules",
+      "backfillEnabled": false,
+      "matchDefinition": {
+        "teams": [
+          {
+            "name": "Side",
+            "teamCount": { "min": 2, "max": 2, "relaxations": [] },
+            "playerCount": { "min": 1, "max": 1, "relaxations": [] },
+            "teamRules": []
+          }
+        ],
+        "matchRules": [
+          {
+            "source": "Players.CustomData.board_size",
+            "name": "SameBoardSize",
+            "type": "Equality",
+            "not": false,
+            "enableRule": true
+          },
+          {
+            "source": "Players.CustomData.mmr",
+            "name": "MmrDifference",
+            "type": "Difference",
+            "reference": 100,
+            "not": false,
+            "enableRule": true,
+            "relaxations": [
+              { "type": "ReferenceControl.Replace", "atSeconds": 10, "ageType": "Oldest", "value": 200 },
+              { "type": "ReferenceControl.Replace", "atSeconds": 20, "ageType": "Oldest", "value": 350 },
+              { "type": "ReferenceControl.Replace", "atSeconds": 30, "ageType": "Oldest", "value": 600 },
+              { "type": "RuleControl.Disable", "atSeconds": 45, "ageType": "Oldest" }
+            ]
+          }
+        ]
+      }
+    },
+    "matchHosting": {
+      "type": "MatchId"
+    }
+  },
+  "filteredPools": []
+}

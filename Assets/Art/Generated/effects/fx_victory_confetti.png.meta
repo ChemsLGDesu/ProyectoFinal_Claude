@@ -1,0 +1,1950 @@
+fileFormatVersion: 2
+guid: 2c2d5e58d291bcc4fa23e3bc7d2fdded
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8566330164115517437
+    second: fx_victory_confetti_0
+  - first:
+      213: -3766844398473977294
+    second: fx_victory_confetti_1
+  - first:
+      213: -2336448182322922220
+    second: fx_victory_confetti_2
+  - first:
+      213: -2780034437513763244
+    second: fx_victory_confetti_3
+  - first:
+      213: 5273814829312503765
+    second: fx_victory_confetti_4
+  - first:
+      213: 8982787380343287552
+    second: fx_victory_confetti_5
+  - first:
+      213: 998666029598090034
+    second: fx_victory_confetti_6
+  - first:
+      213: 91112664327942183
+    second: fx_victory_confetti_7
+  - first:
+      213: 8813512001376316117
+    second: fx_victory_confetti_8
+  - first:
+      213: -6266479632188626913
+    second: fx_victory_confetti_9
+  - first:
+      213: 8563021039628863538
+    second: fx_victory_confetti_10
+  - first:
+      213: -6839760625801911187
+    second: fx_victory_confetti_11
+  - first:
+      213: -1721588776517436848
+    second: fx_victory_confetti_12
+  - first:
+      213: -7228171234907599171
+    second: fx_victory_confetti_13
+  - first:
+      213: 7532657422764297229
+    second: fx_victory_confetti_14
+  - first:
+      213: 6008413943065978591
+    second: fx_victory_confetti_15
+  - first:
+      213: 9068104215163710038
+    second: fx_victory_confetti_16
+  - first:
+      213: -6580188255819319743
+    second: fx_victory_confetti_17
+  - first:
+      213: -4193005554812838590
+    second: fx_victory_confetti_18
+  - first:
+      213: -5118032298877828188
+    second: fx_victory_confetti_19
+  - first:
+      213: 2479548240743743869
+    second: fx_victory_confetti_20
+  - first:
+      213: 4519620981242401438
+    second: fx_victory_confetti_21
+  - first:
+      213: 1021129482241638069
+    second: fx_victory_confetti_22
+  - first:
+      213: -7719764529751230665
+    second: fx_victory_confetti_23
+  - first:
+      213: -641939775423459941
+    second: fx_victory_confetti_24
+  - first:
+      213: 8463212547774567423
+    second: fx_victory_confetti_25
+  - first:
+      213: 6329398393757410335
+    second: fx_victory_confetti_26
+  - first:
+      213: -675299563043106459
+    second: fx_victory_confetti_27
+  - first:
+      213: -1908038355516192709
+    second: fx_victory_confetti_28
+  - first:
+      213: -6451165734494556858
+    second: fx_victory_confetti_29
+  - first:
+      213: -6517189015741067125
+    second: fx_victory_confetti_30
+  - first:
+      213: 6383462259384839565
+    second: fx_victory_confetti_31
+  - first:
+      213: -123060649189800266
+    second: fx_victory_confetti_32
+  - first:
+      213: 114100884407751233
+    second: fx_victory_confetti_33
+  - first:
+      213: -1584204873270558160
+    second: fx_victory_confetti_34
+  - first:
+      213: 104526363047636783
+    second: fx_victory_confetti_35
+  - first:
+      213: 9049579847135677799
+    second: fx_victory_confetti_36
+  - first:
+      213: 7299622543393640561
+    second: fx_victory_confetti_37
+  - first:
+      213: -2695869451883123790
+    second: fx_victory_confetti_38
+  - first:
+      213: -7901880893128855277
+    second: fx_victory_confetti_39
+  - first:
+      213: -756197141932923807
+    second: fx_victory_confetti_40
+  - first:
+      213: -3410689158137246035
+    second: fx_victory_confetti_41
+  - first:
+      213: -1870765559447224890
+    second: fx_victory_confetti_42
+  - first:
+      213: -5132966951501035022
+    second: fx_victory_confetti_43
+  - first:
+      213: 7110335359279395866
+    second: fx_victory_confetti_44
+  - first:
+      213: -3148690569624105626
+    second: fx_victory_confetti_45
+  - first:
+      213: -9105085644983248454
+    second: fx_victory_confetti_46
+  - first:
+      213: -2757328848464104977
+    second: fx_victory_confetti_47
+  - first:
+      213: -3786877683056260148
+    second: fx_victory_confetti_48
+  - first:
+      213: 8448566756204279260
+    second: fx_victory_confetti_49
+  - first:
+      213: -1248841372198137270
+    second: fx_victory_confetti_50
+  - first:
+      213: -6241573631397335559
+    second: fx_victory_confetti_51
+  - first:
+      213: -7518759684838331730
+    second: fx_victory_confetti_52
+  - first:
+      213: 805370805355950861
+    second: fx_victory_confetti_53
+  - first:
+      213: 9008660654648486942
+    second: fx_victory_confetti_54
+  - first:
+      213: 908708587289094997
+    second: fx_victory_confetti_55
+  - first:
+      213: -3829070904029183364
+    second: fx_victory_confetti_56
+  - first:
+      213: 3811648710225568283
+    second: fx_victory_confetti_57
+  - first:
+      213: 2108238352004151417
+    second: fx_victory_confetti_58
+  - first:
+      213: 6093266703163486203
+    second: fx_victory_confetti_59
+  - first:
+      213: 3295474229697506092
+    second: fx_victory_confetti_60
+  - first:
+      213: 6626385954966019931
+    second: fx_victory_confetti_61
+  - first:
+      213: -1267814832068303402
+    second: fx_victory_confetti_62
+  - first:
+      213: 82367125306571992
+    second: fx_victory_confetti_63
+  - first:
+      213: -7350890316898227819
+    second: fx_victory_confetti_64
+  - first:
+      213: -4341472971869792622
+    second: fx_victory_confetti_65
+  - first:
+      213: -1647179440617304100
+    second: fx_victory_confetti_66
+  - first:
+      213: -6959769687610963662
+    second: fx_victory_confetti_67
+  - first:
+      213: 6103221642195596241
+    second: fx_victory_confetti_68
+  - first:
+      213: 6816793082594850737
+    second: fx_victory_confetti_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fx_victory_confetti_0
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1548
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3005e232a184e1980800000000000000
+      internalID: -8566330164115517437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1580
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232e9c82afa79bbc0800000000000000
+      internalID: -3766844398473977294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_2
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1563
+        width: 52
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41df888d1c4439fd0800000000000000
+      internalID: -2336448182322922220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1583
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456a3a888655b69d0800000000000000
+      internalID: -2780034437513763244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_4
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1559
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfeb5835aa503940800000000000000
+      internalID: 5273814829312503765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1419
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f2932978549ac70800000000000000
+      internalID: 8982787380343287552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_6
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1418
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233a1777679fbdd00800000000000000
+      internalID: 998666029598090034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_7
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1337
+        width: 119
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7207ec74c72b34100800000000000000
+      internalID: 91112664327942183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_8
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1484
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da6da12872ef4a70800000000000000
+      internalID: 8813512001376316117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_9
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1355
+        width: 127
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f182d2bc9fdf809a0800000000000000
+      internalID: -6266479632188626913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_10
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1450
+        width: 106
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23846474446f5d670800000000000000
+      internalID: 8563021039628863538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1368
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64af5e03f94411a0800000000000000
+      internalID: -6839760625801911187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_12
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1194
+        width: 171
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05af06e0120bb18e0800000000000000
+      internalID: -1721588776517436848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_13
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1313
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbec2afee8060bb90800000000000000
+      internalID: -7228171234907599171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_14
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1322
+        width: 72
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c439a2400698860800000000000000
+      internalID: 7532657422764297229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_15
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1349
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6a3f3b5ac226350800000000000000
+      internalID: 6008413943065978591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_16
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1363
+        width: 103
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a2e032db068dd70800000000000000
+      internalID: 9068104215163710038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_17
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1137
+        width: 147
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14631b805a97ea4a0800000000000000
+      internalID: -6580188255819319743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_18
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1234
+        width: 84
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d1424d9a37fc5c0800000000000000
+      internalID: -4193005554812838590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_19
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1253
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3496c9db819f8b0800000000000000
+      internalID: -5118032298877828188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_20
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1155
+        width: 84
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71c9fcdcff196220800000000000000
+      internalID: 2479548240743743869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_21
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1244
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e921b52265be8be30800000000000000
+      internalID: 4519620981242401438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_22
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 1228
+        width: 104
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bef0ba9ad7cb2e00800000000000000
+      internalID: 1021129482241638069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_23
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1217
+        width: 102
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737748eaf03edd490800000000000000
+      internalID: -7719764529751230665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_24
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1158
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9dc0b6ec2f5717f0800000000000000
+      internalID: -641939775423459941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_25
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1081
+        width: 85
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff35bb0e8fe537570800000000000000
+      internalID: 8463212547774567423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_26
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1167
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14a6d5fd4a86d750800000000000000
+      internalID: 6329398393757410335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_27
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1107
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561d6d310aad0a6f0800000000000000
+      internalID: -675299563043106459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_28
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1080
+        width: 280
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3803a199394585e0800000000000000
+      internalID: -1908038355516192709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_29
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1064
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64da748b1fad876a0800000000000000
+      internalID: -6451165734494556858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_30
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1051
+        width: 101
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b801da6ae1b4e85a0800000000000000
+      internalID: -6517189015741067125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_31
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1023
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8deeb79a1d969850800000000000000
+      internalID: 6383462259384839565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_32
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1017
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b68637ddfcca4ef0800000000000000
+      internalID: -123060649189800266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_33
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 982
+        width: 156
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1429eab562e559100800000000000000
+      internalID: 114100884407751233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_34
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1018
+        width: 98
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032044daf06c30ae0800000000000000
+      internalID: -1584204873270558160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_35
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 990
+        width: 101
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f2e136c2a537100800000000000000
+      internalID: 104526363047636783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_36
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 971
+        width: 104
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d4e0b9ce0969d70800000000000000
+      internalID: 9049579847135677799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_37
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 894
+        width: 144
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170596537087d4560800000000000000
+      internalID: 7299622543393640561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_38
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 922
+        width: 63
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbedaf4409569ad0800000000000000
+      internalID: -2695869451883123790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_39
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 926
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311bb939131e65290800000000000000
+      internalID: -7901880893128855277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_40
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 847
+        width: 105
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1642ce6b4b27185f0800000000000000
+      internalID: -756197141932923807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_41
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 859
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae04f1084ccaa0d0800000000000000
+      internalID: -3410689158137246035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_42
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 879
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdfc1ba2a4b906e0800000000000000
+      internalID: -1870765559447224890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_43
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 904
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f906f3d0c904c8b0800000000000000
+      internalID: -5132966951501035022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_44
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 779
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a147fbb465cfca260800000000000000
+      internalID: 7110335359279395866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_45
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 740
+        width: 175
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dcee10c9a9d44d0800000000000000
+      internalID: -3148690569624105626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_46
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 829
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9d341c8dc34a180800000000000000
+      internalID: -9105085644983248454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_47
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 804
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe13c5275000cb9d0800000000000000
+      internalID: -2757328848464104977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_48
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 749
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbc39d9fce427bc0800000000000000
+      internalID: -3786877683056260148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_49
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 795
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5fabcc3b65f3570800000000000000
+      internalID: 8448566756204279260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_50
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 810
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42915d73693baee0800000000000000
+      internalID: -1248841372198137270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_51
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 758
+        width: 103
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fded1df9d97169a0800000000000000
+      internalID: -6241573631397335559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_52
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 662
+        width: 85
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaeea917eff7a790800000000000000
+      internalID: -7518759684838331730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_53
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 756
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0336bdfa704d2b00800000000000000
+      internalID: 805370805355950861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_54
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 657
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c6c5ea221350d70800000000000000
+      internalID: 9008660654648486942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_55
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 606
+        width: 185
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ba6b545a16c9c00800000000000000
+      internalID: 908708587289094997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_56
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 641
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c728e81dc486cdac0800000000000000
+      internalID: -3829070904029183364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_57
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 573
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1222959e42b5e430800000000000000
+      internalID: 3811648710225568283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_58
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 530
+        width: 195
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978ff097c97f14d10800000000000000
+      internalID: 2108238352004151417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_59
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 573
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff66c378c1af8450800000000000000
+      internalID: 6093266703163486203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_60
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 506
+        width: 150
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2be29b0a50ebbd20800000000000000
+      internalID: 3295474229697506092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_61
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 594
+        width: 105
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f136efae6a5fb50800000000000000
+      internalID: 6626385954966019931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_62
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 430
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5e89d9021d76ee0800000000000000
+      internalID: -1267814832068303402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_63
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 406
+        width: 99
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc711dc670a42100800000000000000
+      internalID: 82367125306571992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_64
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 476
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5992c6614346cf990800000000000000
+      internalID: -7350890316898227819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_65
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 421
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296ddbd855dffb3c0800000000000000
+      internalID: -4341472971869792622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_66
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 489
+        width: 85
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfcda0a60b0429e0800000000000000
+      internalID: -1647179440617304100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_67
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 394
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239ca63f75ee96f90800000000000000
+      internalID: -6959769687610963662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_68
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 455
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d37b805fbff2b450800000000000000
+      internalID: 6103221642195596241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_victory_confetti_69
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 414
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7f763113d1a9e50800000000000000
+      internalID: 6816793082594850737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_victory_confetti_0: -8566330164115517437
+      fx_victory_confetti_1: -3766844398473977294
+      fx_victory_confetti_10: 8563021039628863538
+      fx_victory_confetti_11: -6839760625801911187
+      fx_victory_confetti_12: -1721588776517436848
+      fx_victory_confetti_13: -7228171234907599171
+      fx_victory_confetti_14: 7532657422764297229
+      fx_victory_confetti_15: 6008413943065978591
+      fx_victory_confetti_16: 9068104215163710038
+      fx_victory_confetti_17: -6580188255819319743
+      fx_victory_confetti_18: -4193005554812838590
+      fx_victory_confetti_19: -5118032298877828188
+      fx_victory_confetti_2: -2336448182322922220
+      fx_victory_confetti_20: 2479548240743743869
+      fx_victory_confetti_21: 4519620981242401438
+      fx_victory_confetti_22: 1021129482241638069
+      fx_victory_confetti_23: -7719764529751230665
+      fx_victory_confetti_24: -641939775423459941
+      fx_victory_confetti_25: 8463212547774567423
+      fx_victory_confetti_26: 6329398393757410335
+      fx_victory_confetti_27: -675299563043106459
+      fx_victory_confetti_28: -1908038355516192709
+      fx_victory_confetti_29: -6451165734494556858
+      fx_victory_confetti_3: -2780034437513763244
+      fx_victory_confetti_30: -6517189015741067125
+      fx_victory_confetti_31: 6383462259384839565
+      fx_victory_confetti_32: -123060649189800266
+      fx_victory_confetti_33: 114100884407751233
+      fx_victory_confetti_34: -1584204873270558160
+      fx_victory_confetti_35: 104526363047636783
+      fx_victory_confetti_36: 9049579847135677799
+      fx_victory_confetti_37: 7299622543393640561
+      fx_victory_confetti_38: -2695869451883123790
+      fx_victory_confetti_39: -7901880893128855277
+      fx_victory_confetti_4: 5273814829312503765
+      fx_victory_confetti_40: -756197141932923807
+      fx_victory_confetti_41: -3410689158137246035
+      fx_victory_confetti_42: -1870765559447224890
+      fx_victory_confetti_43: -5132966951501035022
+      fx_victory_confetti_44: 7110335359279395866
+      fx_victory_confetti_45: -3148690569624105626
+      fx_victory_confetti_46: -9105085644983248454
+      fx_victory_confetti_47: -2757328848464104977
+      fx_victory_confetti_48: -3786877683056260148
+      fx_victory_confetti_49: 8448566756204279260
+      fx_victory_confetti_5: 8982787380343287552
+      fx_victory_confetti_50: -1248841372198137270
+      fx_victory_confetti_51: -6241573631397335559
+      fx_victory_confetti_52: -7518759684838331730
+      fx_victory_confetti_53: 805370805355950861
+      fx_victory_confetti_54: 9008660654648486942
+      fx_victory_confetti_55: 908708587289094997
+      fx_victory_confetti_56: -3829070904029183364
+      fx_victory_confetti_57: 3811648710225568283
+      fx_victory_confetti_58: 2108238352004151417
+      fx_victory_confetti_59: 6093266703163486203
+      fx_victory_confetti_6: 998666029598090034
+      fx_victory_confetti_60: 3295474229697506092
+      fx_victory_confetti_61: 6626385954966019931
+      fx_victory_confetti_62: -1267814832068303402
+      fx_victory_confetti_63: 82367125306571992
+      fx_victory_confetti_64: -7350890316898227819
+      fx_victory_confetti_65: -4341472971869792622
+      fx_victory_confetti_66: -1647179440617304100
+      fx_victory_confetti_67: -6959769687610963662
+      fx_victory_confetti_68: 6103221642195596241
+      fx_victory_confetti_69: 6816793082594850737
+      fx_victory_confetti_7: 91112664327942183
+      fx_victory_confetti_8: 8813512001376316117
+      fx_victory_confetti_9: -6266479632188626913
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

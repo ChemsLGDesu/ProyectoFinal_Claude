@@ -1,0 +1,1790 @@
+/*
+ * TTTXO - Shared UI Toolkit stylesheet for all screens.
+ * Minimal clean look: flat dark background with a subtle neon accent.
+ * No art assets in Milestone 1 - everything here is color/typography/layout only.
+ * Layout structure follows Docs/06-Wireframes-UI.md; this file only concerns itself
+ * with the visual theme, reusing shared component classes (chip/card/header/coin-badge)
+ * across screens instead of one-off per-screen rules.
+ */
+
+:root {
+    --color-bg: #0b0f14;
+    --color-bg-panel: #121821;
+    --color-bg-panel-alt: #182130;
+    --color-bg-elevated: #1c2733;
+    --color-border: #263140;
+    --color-text: #e7edf3;
+    --color-text-muted: #8a97a6;
+    --color-accent: #35e6c6;
+    --color-accent-dark: #1fa88f;
+    --color-accent-secondary: #7c5cff;
+    --color-danger: #ff5d6c;
+    --color-danger-dark: #e14456;
+    --color-warning: #ffb84d;
+    --color-soft-currency: #f4c948;
+    --color-hard-currency: #b58cff;
+    --color-win: #3fd67a;
+    --color-loss: #ff5d6c;
+    --color-draw: #8a97a6;
+}
+
+/*
+ * TODO(localization font, Milestone 3 QA item - see Docs/02-GDD-TicTacToe.md#8 Localización and
+ * Docs/03-Arquitectura-UGS-TicTacToe.md#Localización — implicancias técnicas): no custom font asset
+ * is assigned anywhere in this stylesheet yet, so every screen still renders with UI Toolkit's
+ * built-in default font. Before shipping the 10-language catalog, assign a UI Toolkit Font Asset
+ * (Assets > Create > Text > Font Asset) covering extended Latin diacritics - not just the common
+ * Western accents (á, é, ñ, ü, ç) but also the characters specific to Turkish (ş, ğ, ı, İ),
+ * Vietnamese (the full tonal-diacritic set: ạ, ế, ữ, ...), and Polish (ą, ć, ę, ł, ń, ś, ź, ż) - and
+ * wire it in globally here (e.g. via `-unity-font-definition` on a shared class) rather than per
+ * screen. All 10 target locales stay LTR/latin-alphabet, so this is purely a glyph-coverage check,
+ * not a layout change.
+ */
+
+.app-root {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+/*
+ * `--content-padding-x/y` mirror the `padding` below and must be kept in step with it. SafeAreaController
+ * reads them to rebuild the padding as base + safe-area inset; it cannot read `padding` back, because by
+ * then the value it finds there is its own inline one. The `padding` declaration stays as the value that
+ * applies before the controller runs and in the UI Builder preview.
+ */
+.screen {
+    --content-padding-x: 24;
+    --content-padding-y: 32;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px 24px;
+}
+
+.screen-title {
+    font-size: 32px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 24px;
+    -unity-text-align: upper-center;
+}
+
+.section-label {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+
+.primary-button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border-width: 0;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    margin: 6px;
+    transition-property: scale, background-color;
+    transition-duration: 0.08s;
+}
+
+.primary-button:hover {
+    background-color: var(--color-accent-dark);
+}
+
+.primary-button:active {
+    scale: 0.97 0.97;
+}
+
+.primary-button:disabled {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-muted);
+}
+
+/*
+ * The Home CTA, and the only user of this modifier. `min-width` rather than a width in `%`: the label is
+ * localised into 10 languages, so sizing to the text made the button a different size in every locale.
+ * 320 of the panel's 720 units is a fixed 44% of the screen everywhere.
+ */
+.primary-button--large {
+    padding: 22px 56px;
+    font-size: 30px;
+    border-radius: 14px;
+    margin-top: 20px;
+    min-width: 320px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: var(--color-text);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 16px;
+    margin: 6px;
+    transition-property: border-color, scale;
+    transition-duration: 0.08s;
+}
+
+.secondary-button:hover {
+    border-color: var(--color-accent);
+}
+
+.secondary-button:active {
+    scale: 0.97 0.97;
+}
+
+.danger-button {
+    background-color: transparent;
+    color: var(--color-danger);
+    border-width: 2px;
+    border-color: var(--color-danger);
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 15px;
+    -unity-font-style: bold;
+    margin: 16px 0 0 0;
+    width: 100%;
+    max-width: 420px;
+    transition-property: background-color, scale;
+    transition-duration: 0.08s;
+}
+
+.danger-button:hover {
+    background-color: rgba(255, 93, 108, 0.12);
+}
+
+.danger-button:active {
+    scale: 0.97 0.97;
+}
+
+.icon-button {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text);
+    border-width: 0;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.icon-button:hover {
+    background-color: var(--color-bg-panel-alt);
+}
+
+.back-button {
+    font-size: 22px;
+    -unity-font-style: bold;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* Shared screen header (back + title), used by every sub-screen. */
+
+.screen-header {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+.screen-header-title {
+    font-size: 20px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-left: 12px;
+    flex-shrink: 1;
+}
+
+/* Coin badges (soft/hard currency), used in Home and Store headers. */
+
+.header-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+/*
+ * Shrinks and ellipsises instead of pushing the coin badges off the header. Player names are
+ * server-generated and long ("LittleFreezingCuckoo#53057"), so the label has to be the thing that gives.
+ */
+.player-name-label {
+    font-size: 20px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.coin-badge-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.coin-badge {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-bg-panel);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-left: 8px;
+}
+
+/*
+ * Sized at 18px rather than the original 10px flat dot: the generated currency art is an illustrated
+ * medallion, and below ~16px it reads as an indistinct blob. No background-color fallback here - the
+ * art is a cut-out with real alpha, so a solid colour would show through the transparent corners as a
+ * square behind the coin instead of degrading gracefully.
+ */
+.coin-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    margin-right: 6px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coin-dot--soft {
+    background-image: url("/Assets/Art/Generated/brand-ui/currency_icon_soft.png");
+}
+
+.coin-dot--hard {
+    background-image: url("/Assets/Art/Generated/brand-ui/currency_icon_hard.png");
+}
+
+.coin-badge-value {
+    color: var(--color-text);
+    font-size: 17px;
+    -unity-font-style: bold;
+}
+
+.coin-add-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    margin-left: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+/* Generic card / chip building blocks, specialized per screen below. */
+
+.card {
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.chip {
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 999px;
+    padding: 8px 18px;
+    margin: 4px;
+    color: var(--color-text);
+    font-size: 14px;
+    transition-property: border-color, background-color;
+    transition-duration: 0.08s;
+}
+
+.chip:hover {
+    border-color: var(--color-accent);
+}
+
+.chip--selected {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-panel-alt);
+    color: var(--color-accent);
+}
+
+.chip-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.list-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 6px 0;
+    width: 100%;
+    transition-property: border-color;
+    transition-duration: 0.08s;
+}
+
+.list-item:hover {
+    border-color: var(--color-accent);
+}
+
+.list-item-label {
+    font-size: 15px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+}
+
+.list-item-chevron {
+    font-size: 18px;
+    color: var(--color-text-muted);
+}
+
+.notification-dot {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: var(--color-danger);
+}
+
+/* Overlays: full-screen dim backdrop with a centered panel, shared by pause and confirm dialog. */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(5, 8, 12, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Toast / snackbar, non-blocking notices (e.g. "Online coming soon"). */
+
+.toast {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast-label {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text);
+    border-width: 1px;
+    border-color: var(--color-border);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 14px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+/* 2-column grid, used by Board Select sizes and the Store catalog grid. */
+
+.grid-2col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Splash */
+
+.splash-content {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 24px;
+    background-image: url("/Assets/Art/Generated/brand-ui/brand_mark_icon.png");
+    background-size: contain;
+    background-color: transparent;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+/* Hidden while the logo art carries the branding; kept in the tree as a fallback wordmark. */
+.splash-title {
+    display: none;
+    font-size: 22px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    white-space: normal;
+    -unity-text-align: upper-center;
+}
+
+.spinner {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border-width: 4px;
+    border-top-color: var(--color-accent);
+    border-right-color: var(--color-bg-elevated);
+    border-bottom-color: var(--color-bg-elevated);
+    border-left-color: var(--color-bg-elevated);
+    margin-bottom: 16px;
+}
+
+.loading-label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.splash-error-container {
+    align-items: center;
+    margin-top: 8px;
+}
+
+.splash-error-label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    white-space: normal;
+    max-width: 280px;
+    margin-bottom: 16px;
+}
+
+/* Home */
+
+/*
+ * Full-bleed menu art. scale-and-crop keeps it filling the screen at every aspect ratio (phone
+ * portrait through desktop) instead of letterboxing; --color-bg stays underneath so the screen is
+ * never blank while the texture loads or if the art is missing. The art is authored dark enough for
+ * white UI text to stay readable on top - see Docs/07-Estetica-UI.md.
+ */
+/*
+ * The game's name, not a screen heading - scoped here so the shared `.screen-title` can stay at a size
+ * that suits the pause and confirm dialogs, which are the other two users of that class.
+ */
+.screen-home .screen-title {
+    font-size: 46px;
+    margin-bottom: 32px;
+}
+
+.screen-home {
+    background-color: var(--color-bg);
+    background-image: url("/Assets/Art/Generated/brand-ui/menu_background.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.home-content {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-secondary-row {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.secondary-nav-button {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 16px 12px;
+    margin: 0 6px;
+    /*
+     * 136 and not 124: at 124 the label had 96.6 units of room and the German "Einstellungen"
+     * measured 94.8 - it fitted by 1.8, which is not a margin. This class carries no
+     * text-overflow, so the failure mode is a visible spill rather than an ellipsis. Three
+     * buttons at 136 plus their margins come to 444 of the 672 available, so the row is still
+     * comfortable. Measured widths for all 10 locales in Docs/09-Encuadre-Dispositivos.md (L-08).
+     */
+    width: 136px;
+    transition-property: border-color, scale;
+    transition-duration: 0.08s;
+}
+
+.secondary-nav-button:hover {
+    border-color: var(--color-accent);
+}
+
+.secondary-nav-button:active {
+    scale: 0.97 0.97;
+}
+
+.secondary-nav-icon {
+    font-size: 28px;
+    margin-bottom: 6px;
+    -unity-text-align: upper-center;
+}
+
+.secondary-nav-label {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+}
+
+/* Mode select */
+
+/*
+ * Grows and centres its cards in the play area rather than stacking them under the header. Three mode
+ * cards are ~540px of content on a 1400px-tall panel, so top-aligning them left every tap target in the
+ * upper third - out of thumb reach on a phone held one-handed.
+ */
+.card-column {
+    width: 100%;
+    max-width: 420px;
+    align-items: stretch;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.mode-card {
+    position: relative;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 8px 0;
+    width: 100%;
+    align-items: center;
+    transition-property: border-color, scale;
+    transition-duration: 0.08s;
+}
+
+.mode-card:hover {
+    border-color: var(--color-accent);
+    scale: 1.01 1.01;
+}
+
+.mode-card--disabled {
+    opacity: 0.75;
+}
+
+.mode-card--disabled:hover {
+    border-color: var(--color-border);
+    scale: 1 1;
+}
+
+.card-icon {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+/*
+ * Mode cards use generated art instead of a glyph. Only the three top-level modes have art; the
+ * online submenu's Quickmatch/Ranked cards keep their text glyph, so any card wearing this class must
+ * be a VisualElement, not the Label the glyph cards still use.
+ */
+.card-icon--image {
+    width: 56px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-icon--single-player {
+    background-image: url("/Assets/Art/Generated/brand-ui/mode_icon_single_player.png");
+}
+
+.card-icon--local-2p {
+    background-image: url("/Assets/Art/Generated/brand-ui/mode_icon_local_2p.png");
+}
+
+.card-icon--online {
+    background-image: url("/Assets/Art/Generated/brand-ui/mode_icon_online.png");
+}
+
+.card-title {
+    font-size: 20px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+    margin-bottom: 8px;
+    white-space: normal;
+}
+
+.card-description {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+.soon-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--color-bg-elevated);
+    border-radius: 999px;
+    padding: 3px 10px;
+}
+
+.soon-tag-label {
+    font-size: 11px;
+    color: var(--color-warning);
+    -unity-font-style: bold;
+}
+
+/* Matchmaking (Milestone 4) */
+
+.screen-matchmaking {
+    justify-content: space-between;
+}
+
+.matchmaking-content {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchmaking-elapsed-label {
+    font-size: 34px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.matchmaking-status-label {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+}
+
+.matchmaking-fallback-card {
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    margin-top: 12px;
+}
+
+.matchmaking-fallback-title-label {
+    font-size: 16px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+}
+
+.matchmaking-cancel-button {
+    width: 100%;
+    max-width: 340px;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+/* Wire status chip (Milestone 4, online-only - Docs/06-Wireframes-UI.md screen 6) */
+
+.game-wire-chip {
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 0;
+}
+
+.wire-chip-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    margin-right: 6px;
+    background-color: var(--color-text-muted);
+}
+
+.wire-chip-dot--subscribed {
+    background-color: var(--color-win);
+}
+
+.wire-chip-dot--connecting {
+    background-color: var(--color-warning);
+}
+
+/* Board select */
+
+.board-select-content {
+    width: 100%;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+/*
+ * Centres the size/difficulty pickers when they fit, without breaking the scroll when they do not.
+ * `min-height: 100%` is what makes both cases work: short content leaves the container at viewport
+ * height and `justify-content` centres it; tall content grows the container past the viewport, where
+ * centring becomes a no-op and the ScrollView scrolls normally. Centring alone would be either
+ * ineffective (container hugs its content) or, with flex-grow, would clip the top out of reach.
+ */
+.board-select-content .unity-scroll-view__content-container {
+    min-height: 100%;
+    justify-content: center;
+}
+
+.board-select-confirm {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 12px;
+}
+
+.board-size-card {
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 14px 10px;
+    margin: 6px 0;
+    width: 48%;
+    align-items: center;
+    transition-property: border-color, scale;
+    transition-duration: 0.08s;
+}
+
+.board-size-card:hover {
+    border-color: var(--color-accent);
+}
+
+.board-size-card--selected {
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-panel-alt);
+}
+
+.board-size-card-label {
+    font-size: 18px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+}
+
+.board-size-card-align-label {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    margin-top: 2px;
+}
+
+.difficulty-section {
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.difficulty-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.difficulty-chip {
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 999px;
+    padding: 8px 18px;
+    margin: 4px;
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.difficulty-chip:hover {
+    border-color: var(--color-accent-secondary);
+}
+
+.difficulty-chip--selected {
+    border-color: var(--color-accent-secondary);
+    background-color: var(--color-bg-panel-alt);
+    color: var(--color-accent-secondary);
+}
+
+/* Game screen */
+
+/* Keep --content-padding-x/y in step with `padding` - see the note on .screen. */
+.screen-game {
+    --content-padding-x: 16;
+    --content-padding-y: 16;
+    padding: 16px;
+    justify-content: flex-start;
+}
+
+.game-top-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 8px;
+}
+
+.game-top-bar-spacer {
+    flex-grow: 1;
+}
+
+.turn-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    background-color: var(--color-bg-panel);
+    border-radius: 10px;
+}
+
+.turn-side {
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.55;
+    transition-property: opacity;
+    transition-duration: 0.12s;
+}
+
+.turn-side--active {
+    opacity: 1;
+}
+
+.turn-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    margin-right: 6px;
+}
+
+.turn-dot--x {
+    background-color: var(--color-accent);
+}
+
+.turn-dot--o {
+    background-color: var(--color-accent-secondary);
+}
+
+.turn-side-label {
+    font-size: 14px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.turn-timer-chip {
+    margin: 0 8px;
+}
+
+.chip-label {
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+/*
+ * width: 100% is load-bearing, not cosmetic. .screen sets align-items: center, so without it this
+ * container shrinks to fit its own content - and GameScreenController sizes the cells from the
+ * container's resolved width, which would then be measuring the board it just built. On a screen
+ * narrower than the board the loop can never shrink, because the measurement only ever reports the
+ * size it already chose.
+ *
+ * max-width is where the board's size ceiling lives, rather than as a number inside the controller:
+ * the panel scales with ConstantPhysicalSize, so on a tablet or a desktop window the play area really
+ * does get bigger and an uncapped board would grow with it. 640px is the point past which the board
+ * stops being comfortably reachable and starts reading as a web page. It is deliberately wider than
+ * the 520px the top and turn bars use - the board is the thing being played with, and there is no
+ * reason for it to be narrower than a status strip.
+ */
+.board-container {
+    flex-direction: column;
+    align-items: center;
+    /*
+     * Centred in the play area. This reverses the earlier top-anchoring (see git history): anchoring put
+     * the board within reach of nothing, since on a tall phone the whole grid sat in the upper half and
+     * the thumb never got there. Centring costs the "slack collects at the bottom" property that the
+     * reactions row of wireframe 6 was going to use - that row will have to claim its own band under the
+     * board instead of inheriting the leftovers.
+     */
+    justify-content: center;
+    padding-top: 8px;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 640px;
+}
+
+.board-row {
+    flex-direction: row;
+}
+
+.board-cell {
+    background-color: var(--color-bg-panel);
+    border-width: 1px;
+    border-color: var(--color-border);
+    margin: 2px;
+    /*
+     * Unity's default Button theme puts 12px of padding on every side. A cell has no text - the piece is
+     * a background-image - so that padding buys nothing and costs 24px per cell, which on a 3x3 is 72px
+     * of board. It does not appear anywhere else in this file, which is exactly why it went unnoticed.
+     */
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    border-radius: 4px;
+    transition-property: background-color, scale;
+    transition-duration: 0.08s;
+}
+
+.board-cell:hover {
+    background-color: var(--color-bg-panel-alt);
+}
+
+.board-cell:disabled {
+    opacity: 1;
+}
+
+/*
+ * Surface the board rows sit on, and what carries the piece/board skin classes. Separate from
+ * .board-container because that one is flex-grow: 1 and fills the whole play area - a board skin painted
+ * there stretched far above and below the grid. This hugs the rows instead.
+ */
+.board-surface {
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+ * A piece is its skin art; the cell carries no letter. The colours here still tint anything textual the
+ * cell might show and keep the two owners distinguishable in the style sheet, but they are not a visual
+ * fallback: UI Toolkit draws a Button's label ON TOP of its background-image, so a glyph left in place
+ * stamps itself over the art rather than sitting behind it.
+ */
+.board-cell--x {
+    color: var(--color-accent);
+}
+
+.board-cell--o {
+    color: var(--color-accent-secondary);
+}
+
+/*
+ * Transient effects (see BoardEffects.cs). Each is an absolutely-positioned overlay added over its
+ * target and animated by a transition, then removed - a cell already spends its background-image on the
+ * piece skin, and an element only has one, so these cannot be styled onto the target itself.
+ */
+.fx-place,
+.fx-winline,
+.fx-confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/* Burst on placement: starts small and opaque, expands and fades out. */
+.fx-place {
+    background-image: url("/Assets/Art/Generated/effects/fx_place_particle.png");
+    background-size: contain;
+    opacity: 0.9;
+    scale: 0.4 0.4;
+    transition-property: opacity, scale;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+}
+
+.fx-place--active {
+    opacity: 0;
+    scale: 1.5 1.5;
+}
+
+/* Winning line: fades in and stays until the next board is built. */
+.fx-winline {
+    background-image: url("/Assets/Art/Generated/effects/fx_winline_glow.png");
+    background-size: cover;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+.fx-winline--active {
+    opacity: 0.85;
+}
+
+/* Victory confetti: drifts down over the result screen and fades. */
+.fx-confetti {
+    background-image: url("/Assets/Art/Generated/effects/fx_victory_confetti.png");
+    background-size: cover;
+    opacity: 0;
+    translate: 0 -40px;
+    transition-property: opacity, translate;
+    transition-duration: 1.4s;
+    transition-timing-function: ease-out;
+}
+
+.fx-confetti--active {
+    opacity: 0.55;
+    translate: 0 40px;
+}
+
+/*
+ * Piece and board skins are applied as a class on the BOARD CONTAINER, and reach the cells through
+ * descendant selectors. One class swap restyles an 11x11 board rather than touching 121 elements, and a
+ * cell keeps knowing only whether it holds an X or an O.
+ *
+ * The pieces are sized at 88% of the cell rather than filling it: the art is already framed with its own
+ * margin (SubjectNormalizer's coverage), and a piece that touches the cell border reads as cramped next
+ * to the grid lines the UI draws.
+ */
+.board-cell--x,
+.board-cell--o {
+    background-size: 88% 88%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.piece-skin--neon .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_x.png"); }
+.piece-skin--neon .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_o.png"); }
+.piece-skin--minimalist .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_x.png"); }
+.piece-skin--minimalist .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_o.png"); }
+.piece-skin--wood .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_x.png"); }
+.piece-skin--wood .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_o.png"); }
+.piece-skin--space .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_x.png"); }
+.piece-skin--space .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_o.png"); }
+.piece-skin--animals .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_x.png"); }
+.piece-skin--animals .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_o.png"); }
+.piece-skin--retro .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_x.png"); }
+.piece-skin--retro .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_o.png"); }
+.piece-skin--elemental .board-cell--x { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_x.png"); }
+.piece-skin--elemental .board-cell--o { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_o.png"); }
+
+/*
+ * Board skins are the surface behind the grid, so they sit on the container and the cells go transparent
+ * to let it through. That is exactly why the board art carries no baked grid (Docs/08): the grid is the
+ * cell borders the UI draws, at whichever of the four sizes is being played.
+ */
+.board-skin--neon,
+.board-skin--wood,
+.board-skin--space,
+.board-skin--paper {
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.board-skin--neon .board-cell,
+.board-skin--wood .board-cell,
+.board-skin--space .board-cell,
+.board-skin--paper .board-cell {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.board-skin--neon { background-image: url("/Assets/Art/Generated/board-skins/board_neon.jpg"); }
+.board-skin--wood { background-image: url("/Assets/Art/Generated/board-skins/board_wood.jpg"); }
+.board-skin--space { background-image: url("/Assets/Art/Generated/board-skins/board_space.jpg"); }
+.board-skin--paper { background-image: url("/Assets/Art/Generated/board-skins/board_paper.jpg"); }
+
+.board-cell--win {
+    background-color: var(--color-bg-elevated);
+    border-color: var(--color-accent);
+}
+
+.pause-panel {
+    background-color: var(--color-bg-panel);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: 28px;
+    align-items: center;
+    min-width: 260px;
+}
+
+/* Confirm dialog */
+
+.confirm-dialog-panel {
+    background-color: var(--color-bg-panel);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: 28px;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+}
+
+.confirm-dialog-message {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    white-space: normal;
+    -unity-text-align: upper-center;
+    margin-bottom: 8px;
+}
+
+/* The confirm/danger button is reused inline next to Cancel here, unlike the full-width
+   standalone "Delete my data" / "Delete account & data" buttons on Profile/Settings. */
+.button-row .danger-button {
+    width: auto;
+    max-width: none;
+    margin: 6px;
+}
+
+/* Result screen */
+
+.screen-result {
+    justify-content: center;
+}
+
+.result-status-label {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    -unity-text-align: upper-center;
+}
+
+.reward-card {
+    align-items: center;
+    margin-bottom: 8px;
+    min-width: 220px;
+}
+
+.reward-card-title {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+}
+
+.reward-card-value-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.reward-card-value-row .coin-dot {
+    width: 12px;
+    height: 12px;
+}
+
+.reward-card-value {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: var(--color-soft-currency);
+}
+
+/* Ranked MMR card (Milestone 5, Result screen only - wireframe 7 "Card Ranked") - reuses the
+   reward-card layout/title styling, only the value gets its own modifiers below. */
+
+.ranked-card {
+    align-items: center;
+    margin-bottom: 8px;
+    min-width: 220px;
+}
+
+.ranked-mmr-value {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-accent-secondary);
+}
+
+.ranked-mmr-value--up {
+    color: var(--color-win);
+}
+
+.ranked-mmr-value--down {
+    color: var(--color-loss);
+}
+
+/*
+ * Scrollbars.
+ *
+ * Unity's default scroller is a light-grey desktop widget with arrow buttons at both ends - on a dark
+ * mobile screen it reads as a piece of the Editor that leaked into the game. This restyles it to a thin
+ * dark rail with no arrows, and every ScrollView in Root.uxml is set to mode="Vertical" so the horizontal
+ * bar cannot appear at all: sideways scrolling is never wanted here, and a stray overflowing child was
+ * enough to summon one across the bottom of the screen.
+ */
+.unity-scroll-view__vertical-scroller {
+    width: 6px;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.unity-scroll-view__vertical-scroller .unity-base-slider__tracker {
+    background-color: transparent;
+    border-width: 0;
+}
+
+.unity-scroll-view__vertical-scroller .unity-base-slider__dragger {
+    background-color: var(--color-border);
+    border-width: 0;
+    border-radius: 999px;
+    width: 6px;
+    margin-left: 0;
+}
+
+.unity-scroll-view__vertical-scroller .unity-base-slider__dragger:hover {
+    background-color: var(--color-text-muted);
+}
+
+/* The arrow buttons are desktop furniture - a touch screen scrolls by dragging. */
+.unity-scroller__low-button,
+.unity-scroller__high-button {
+    display: none;
+}
+
+/* Profile */
+
+.profile-content {
+    width: 100%;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+/*
+ * The banner is art behind the avatar and name, so --color-bg-panel-alt stays underneath as the fallback
+ * while the texture loads or if a banner is ever missing. scale-and-crop rather than contain: this is a
+ * backdrop that should fill its card at any width, not an object to fit inside it.
+ */
+.profile-banner {
+    align-items: center;
+    background-color: var(--color-bg-panel-alt);
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: var(--color-border);
+    padding: 28px 16px 16px 16px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.profile-banner--neon { background-image: url("/Assets/Art/Generated/profile/profile_banner_neon.jpg"); }
+.profile-banner--space { background-image: url("/Assets/Art/Generated/profile/profile_banner_space.jpg"); }
+
+/*
+ * Skin swatches. A piece skin shows its X - one glyph is enough to recognise the set, and showing both
+ * would halve each at this size. A board skin shows its surface, squared off like a board rather than
+ * rounded like an avatar.
+ */
+.equip-preview--piece-neon { background-image: url("/Assets/Art/Generated/piece-skins/piece_neon_x.png"); }
+.equip-preview--piece-minimalist { background-image: url("/Assets/Art/Generated/piece-skins/piece_minimalist_x.png"); }
+.equip-preview--piece-wood { background-image: url("/Assets/Art/Generated/piece-skins/piece_wood_x.png"); }
+.equip-preview--piece-space { background-image: url("/Assets/Art/Generated/piece-skins/piece_space_x.png"); }
+.equip-preview--piece-animals { background-image: url("/Assets/Art/Generated/piece-skins/piece_animals_x.png"); }
+.equip-preview--piece-retro { background-image: url("/Assets/Art/Generated/piece-skins/piece_retro_x.png"); }
+.equip-preview--piece-elemental { background-image: url("/Assets/Art/Generated/piece-skins/piece_elemental_x.png"); }
+
+.equip-preview--board-neon { background-image: url("/Assets/Art/Generated/board-skins/board_neon.jpg"); }
+.equip-preview--board-wood { background-image: url("/Assets/Art/Generated/board-skins/board_wood.jpg"); }
+.equip-preview--board-space { background-image: url("/Assets/Art/Generated/board-skins/board_space.jpg"); }
+.equip-preview--board-paper { background-image: url("/Assets/Art/Generated/board-skins/board_paper.jpg"); }
+
+/*
+ * Avatar and frame are two overlaid images whose sizes come from how the art was normalized, not from
+ * eyeballing: an avatar's disc spans 75% of its own canvas and a frame's opening spans 58% of its own
+ * (see ArtPromptCatalog's coverage constants). For a 64px disc that means a 85px avatar element inside a
+ * 110px frame, which is why the slot is sized off the frame and the avatar is centred within it.
+ * Changing either coverage constant means recomputing these two numbers.
+ */
+.profile-avatar-slot {
+    width: 110px;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-avatar {
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/* Absolute so it sits ON the avatar rather than beside it, and can be larger than the disc it rings. */
+.profile-avatar-frame {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/*
+ * One modifier per owned cosmetic. There is no avatar/frame selection system yet, so the UXML carries a
+ * default pair; when selection lands it swaps these classes and nothing else has to change.
+ */
+/*
+ * Compact variant for the Home header and the in-match turn bar. The numbers come from the same coverage
+ * arithmetic as the large one: a 28px visible disc needs a 37px avatar (28 / 0.75) inside a 48px frame
+ * (28 / 0.58). Sized off the frame, as before, since the frame is the larger of the two.
+ */
+.profile-avatar-slot--small {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.profile-avatar--small {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-avatar-frame--small {
+    width: 64px;
+    height: 64px;
+}
+
+.profile-avatar--fox { background-image: url("/Assets/Art/Generated/profile/avatar_fox.png"); }
+.profile-avatar--cat { background-image: url("/Assets/Art/Generated/profile/avatar_cat.png"); }
+.profile-avatar--robot { background-image: url("/Assets/Art/Generated/profile/avatar_robot.png"); }
+.profile-avatar--owl { background-image: url("/Assets/Art/Generated/profile/avatar_owl.png"); }
+.profile-avatar--dragon { background-image: url("/Assets/Art/Generated/profile/avatar_dragon.png"); }
+.profile-avatar--astronaut { background-image: url("/Assets/Art/Generated/profile/avatar_astronaut.png"); }
+
+.profile-avatar-frame--neon { background-image: url("/Assets/Art/Generated/profile/profile_frame_neon.png"); }
+.profile-avatar-frame--gold { background-image: url("/Assets/Art/Generated/profile/profile_frame_gold_ornate.png"); }
+
+/*
+ * Equip panel: the "editable desde acá" half of Docs/05-UI-Pantallas #131. The Store link stays, but it
+ * now means "get more" rather than being the only way to change what you already have.
+ */
+.equip-panel {
+    width: 100%;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top-width: 1px;
+    border-top-color: var(--color-border);
+}
+
+.equip-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+/* Names each row. Without them the panel is five unlabelled strips of art and you have to guess. */
+.equip-section-label {
+    width: 100%;
+    font-size: 12px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-left;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}
+
+/*
+ * The rival's portrait sits to the RIGHT of its name, mirroring the local player's which sits left of
+ * theirs - the turn bar reads outward from the centre, so each side's face stays on its own outer edge.
+ */
+.turn-side .profile-avatar-slot--small {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.turn-side-home .profile-avatar-slot--small {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+/*
+ * Rival portraits. The AI gets the robot avatar - it is the one piece of art in the set that reads as a
+ * machine. A human rival gets a neutral silhouette: in local two-player the second player has no profile
+ * of their own, and online the server does not send the opponent's equipped cosmetics, so inventing a
+ * face for either would be showing something the game does not know.
+ */
+.turn-avatar--ai {
+    background-image: url("/Assets/Art/Generated/profile/avatar_robot.png");
+}
+
+.turn-avatar--human {
+    background-image: url("/Assets/Art/Generated/store/store_icon_profile.png");
+}
+
+/*
+ * One swatch per cosmetic, showing the art itself rather than a name - it is what the player is choosing,
+ * and it keeps the picker out of Unity Localization for a set that has no words in it.
+ */
+.equip-option {
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+    border-radius: 999px;
+    border-width: 2px;
+    border-color: var(--color-border);
+    background-color: var(--color-bg-panel);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.equip-option:hover {
+    border-color: var(--color-text-muted);
+}
+
+.equip-option--selected {
+    border-color: var(--color-accent);
+    border-width: 3px;
+}
+
+/*
+ * Size modifiers. These MUST come after .equip-option: they carry the same specificity as the base rule,
+ * so in USS the later one wins. They were originally written further up the file and were silently
+ * overridden by the base - every swatch resolved to 48px no matter which modifier it carried, which is
+ * invisible in the class list and only shows up in the resolved style.
+ */
+
+/* Wider because a banner is 16:9 - a circle would not show what you are picking - and generous because a
+ * banner is mostly dark by design, so a small preview reads as a black rectangle. */
+.equip-option--banner {
+    width: 116px;
+    height: 66px;
+    border-radius: 8px;
+}
+
+/* Seven piece skins in one row: 7 x (40 + 2 x 3) = 322px, inside a panel measured at 380px. At 48px the
+ * seventh wrapped alone onto a second line, which reads as a mistake rather than as a layout. */
+.equip-option--piece {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+
+/* The largest of the lot. Every board skin is a dark surface - the backdrop rule doing its job - so what
+ * distinguishes them is texture: circuit traces, wood grain, nebula, paper fibre. At 48px all four were
+ * an identical dark square and picking one was guesswork. 4 x (76 + 8) = 336px, still one row. */
+.equip-option--board {
+    width: 76px;
+    height: 76px;
+    border-radius: 8px;
+    background-size: cover;
+}
+
+.profile-name-label {
+    font-size: 18px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+}
+
+.link-row {
+    padding: 2px;
+}
+
+.link-label {
+    font-size: 13px;
+    color: var(--color-accent);
+}
+
+.stats-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.stat-box {
+    flex-grow: 1;
+    align-items: center;
+    background-color: var(--color-bg-panel);
+    border-width: 2px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 14px 8px;
+    margin: 0 4px;
+}
+
+.stat-value {
+    font-size: 22px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+.stat-caption {
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+/* Profile - Ranked section (Milestone 5, design-doc.md section 6, wireframe 8's MMR stat) - one row
+   per Ranked-enabled board size (3x3/6x6), reusing the generic .card surface. */
+
+.profile-ranked-section {
+    margin-bottom: 16px;
+}
+
+.profile-ranked-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+/*
+ * Tier medal beside a Ranked row. Hidden until the board is placed - the controller only reveals it once
+ * the server reports a tier, so an unplaced board never shows a rank the player has not earned.
+ */
+.tier-badge {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.tier-badge--bronze { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_bronze.png"); }
+.tier-badge--silver { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_silver.png"); }
+.tier-badge--gold { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_gold.png"); }
+.tier-badge--platinum { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_platinum.png"); }
+.tier-badge--diamond { background-image: url("/Assets/Art/Generated/ranked/ranked_badge_diamond.png"); }
+
+.profile-ranked-board-label {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    -unity-font-style: bold;
+}
+
+.profile-ranked-value-label {
+    font-size: 14px;
+    color: var(--color-accent-secondary);
+    -unity-font-style: bold;
+}
+
+/* Match history */
+
+.match-history-list {
+    width: 100%;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.match-history-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg-panel);
+    border-width: 1px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 5px 0;
+}
+
+.match-history-item-main {
+    flex-direction: column;
+}
+
+.match-history-result-label {
+    font-size: 15px;
+    -unity-font-style: bold;
+    margin-bottom: 3px;
+}
+
+.match-history-result-label--win {
+    color: var(--color-win);
+}
+
+.match-history-result-label--loss {
+    color: var(--color-loss);
+}
+
+.match-history-result-label--draw {
+    color: var(--color-draw);
+}
+
+.match-history-meta-label {
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.match-history-time-label {
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.empty-state-label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-top: 24px;
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+/* Leaderboard (Milestone 5, design-doc.md section 6.6, wireframe 10) - reuses .match-history-list's
+   scroll container; rows below are this screen's own since the shape (rank/name/mmr) differs from
+   a match-history row. */
+
+.leaderboard-row {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-bg-panel);
+    border-width: 1px;
+    border-color: var(--color-border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 5px 0;
+}
+
+.leaderboard-row--self {
+    border-width: 2px;
+    border-color: var(--color-accent);
+    background-color: var(--color-bg-panel-alt);
+}
+
+.leaderboard-rank-label {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    width: 36px;
+    -unity-font-style: bold;
+}
+
+.leaderboard-name-label {
+    font-size: 15px;
+    color: var(--color-text);
+    flex-grow: 1;
+}
+
+.leaderboard-mmr-label {
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: var(--color-accent-secondary);
+}
+
+.leaderboard-row--self .leaderboard-rank-label,
+.leaderboard-row--self .leaderboard-name-label,
+.leaderboard-row--self .leaderboard-mmr-label {
+    color: var(--color-accent);
+}
+
+.leaderboard-separator-label {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    margin: 2px 0;
+}
+
+.leaderboard-placement-note {
+    margin-top: 12px;
+}
+
+/* Store */
+
+.tab-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 16px;
+}
+
+.tab-button {
+    background-color: transparent;
+    color: var(--color-text-muted);
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-color: transparent;
+    border-radius: 0;
+    padding: 8px 14px;
+    margin: 0 2px;
+    font-size: 14px;
+}
+
+.tab-button--active {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.store-content {
+    width: 100%;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.store-item-card {
+    width: 48%;
+    align-items: center;
+    margin: 6px 0;
+    padding: 18px 10px;
+}
+
+.store-item-card-icon {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: var(--color-text-muted);
+}
+
+.store-item-card-title {
+    font-size: 14px;
+    color: var(--color-text);
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+.store-item-card-description {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    -unity-text-align: upper-center;
+    white-space: normal;
+}
+
+/* Settings */
+
+.settings-content {
+    width: 100%;
+    max-width: 420px;
+    flex-grow: 1;
+}
+
+.settings-card {
+    margin-bottom: 16px;
+    align-items: stretch;
+}
+
+.settings-dropdown {
+    margin-bottom: 6px;
+}
+
+.settings-note {
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+.settings-slider {
+    margin-bottom: 12px;
+}

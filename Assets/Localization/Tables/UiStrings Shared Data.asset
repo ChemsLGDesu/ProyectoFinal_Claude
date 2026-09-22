@@ -1,0 +1,508 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UiStrings Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UiStrings
+  m_TableCollectionNameGuidString: cb21eb36931960641866102c3dec9063
+  m_Entries:
+  - m_Id: 1770012672
+    m_Key: Common/Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178496
+    m_Key: Common/Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178497
+    m_Key: Common/Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178498
+    m_Key: Common/Abandon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178499
+    m_Key: Common/PlayerNamePlaceholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178500
+    m_Key: Common/ComingSoon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178501
+    m_Key: Splash/AppTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178502
+    m_Key: Splash/Loading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178503
+    m_Key: Splash/ErrorMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178504
+    m_Key: Splash/RetryButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178505
+    m_Key: Home/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178506
+    m_Key: Home/PlayButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178507
+    m_Key: Home/ProfileLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178508
+    m_Key: Home/StoreLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372800
+    m_Key: Home/SettingsLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372801
+    m_Key: ModeSelect/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372802
+    m_Key: ModeSelect/SinglePlayerTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372803
+    m_Key: ModeSelect/SinglePlayerDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372804
+    m_Key: ModeSelect/LocalMultiplayerTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372805
+    m_Key: ModeSelect/LocalMultiplayerDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372806
+    m_Key: ModeSelect/OnlineTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372807
+    m_Key: ModeSelect/OnlineDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372808
+    m_Key: ModeSelect/OnlineSoonTag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372809
+    m_Key: ModeSelect/OnlineComingSoonMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372810
+    m_Key: BoardSelect/BoardSizeSectionLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372811
+    m_Key: BoardSelect/BoardAlignFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372812
+    m_Key: BoardSelect/DifficultyLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372813
+    m_Key: BoardSelect/DifficultyEasy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372814
+    m_Key: BoardSelect/DifficultyMedium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372815
+    m_Key: BoardSelect/DifficultyHard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372816
+    m_Key: BoardSelect/DifficultyAdaptive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372817
+    m_Key: BoardSelect/ConfirmButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372818
+    m_Key: Game/YouLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372819
+    m_Key: Game/RivalLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372820
+    m_Key: Game/AiThinking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372821
+    m_Key: Game/Player1Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372822
+    m_Key: Game/Player2Label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372823
+    m_Key: Game/PauseTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372824
+    m_Key: Result/YouWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372825
+    m_Key: Result/YouLose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372826
+    m_Key: Result/Draw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372827
+    m_Key: Result/Player1Wins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372828
+    m_Key: Result/Player2Wins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372829
+    m_Key: Result/RewardCardTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372830
+    m_Key: Result/RematchButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372831
+    m_Key: Result/HomeButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372832
+    m_Key: Profile/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372833
+    m_Key: Profile/EditLookLinkFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372834
+    m_Key: Profile/WinRateCaption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372835
+    m_Key: Profile/StreakCaption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372836
+    m_Key: Profile/MatchHistoryButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372837
+    m_Key: Profile/DeleteDataButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372838
+    m_Key: Profile/DeleteConfirmTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372839
+    m_Key: Profile/DeleteConfirmMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372840
+    m_Key: Profile/DeleteConfirmButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372841
+    m_Key: MatchHistory/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372842
+    m_Key: MatchHistory/FilterAll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372843
+    m_Key: MatchHistory/FilterSingle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372844
+    m_Key: MatchHistory/FilterLocal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372845
+    m_Key: MatchHistory/EmptyState
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372846
+    m_Key: MatchHistory/ResultWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372847
+    m_Key: MatchHistory/ResultLoss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372848
+    m_Key: MatchHistory/ResultDraw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372849
+    m_Key: MatchHistory/LocalPlayer1Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372850
+    m_Key: MatchHistory/LocalPlayer2Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372851
+    m_Key: MatchHistory/DurationMinutesFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372852
+    m_Key: MatchHistory/DurationSecondsFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372853
+    m_Key: MatchHistory/TimeAgoJustNow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372854
+    m_Key: MatchHistory/TimeAgoMinutesFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372855
+    m_Key: MatchHistory/TimeAgoHoursFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372856
+    m_Key: MatchHistory/TimeAgoDaysFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372857
+    m_Key: Store/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372858
+    m_Key: Store/TabPieces
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372859
+    m_Key: Store/TabBoards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372860
+    m_Key: Store/TabFx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372861
+    m_Key: Store/TabSound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372862
+    m_Key: Store/ComingSoonCardTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372863
+    m_Key: Store/ComingSoonCardDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372864
+    m_Key: Store/BuyCurrencyToast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372865
+    m_Key: Settings/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372866
+    m_Key: Settings/LanguageLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372867
+    m_Key: Settings/SoundLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372868
+    m_Key: Settings/MusicLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372869
+    m_Key: Settings/DeleteAccountButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372870
+    m_Key: Settings/DeleteAccountConfirmTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208380964864
+    m_Key: ModeSelect/OnlineQuickmatchTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742080
+    m_Key: ModeSelect/OnlineQuickmatchDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742081
+    m_Key: ModeSelect/OnlineRankedTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742082
+    m_Key: ModeSelect/OnlineRankedDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742083
+    m_Key: ModeSelect/OnlineRankedComingSoonMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742084
+    m_Key: Matchmaking/SearchingLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742085
+    m_Key: Matchmaking/ConnectingLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742086
+    m_Key: Matchmaking/FallbackTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742087
+    m_Key: Matchmaking/PlayVsAiButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742088
+    m_Key: Game/WireSubscribed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742089
+    m_Key: Game/WireConnecting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742090
+    m_Key: Game/WireOffline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742091
+    m_Key: Game/AbandonConfirmTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742092
+    m_Key: Game/AbandonConfirmMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742093
+    m_Key: Result/OpponentLeftNote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955727769600
+    m_Key: Result/RankedCardTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546816
+    m_Key: Profile/LeaderboardButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546817
+    m_Key: Profile/RankedSectionTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546818
+    m_Key: Profile/RankedPlacementFormat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546819
+    m_Key: Profile/RankedTierBronze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546820
+    m_Key: Profile/RankedTierSilver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546821
+    m_Key: Profile/RankedTierGold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546822
+    m_Key: Profile/RankedTierPlatinum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546823
+    m_Key: Profile/RankedTierDiamond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546824
+    m_Key: Leaderboard/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546825
+    m_Key: Leaderboard/LoadingMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546826
+    m_Key: Leaderboard/UnavailableMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546827
+    m_Key: Leaderboard/EmptyMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546828
+    m_Key: Leaderboard/PlacementRequiredMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106386268160
+    m_Key: Profile/EquipAvatarsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045376
+    m_Key: Profile/EquipFramesTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045377
+    m_Key: Profile/EquipBannersTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045378
+    m_Key: Profile/EquipPieceSkinsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045379
+    m_Key: Profile/EquipBoardSkinsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5904570035224576
+    m_Key: Profile/StoreLinkFormat
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5218567492253778160
+  references:
+    version: 2
+    RefIds:
+    - rid: 5218567492253778160
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1784821843119

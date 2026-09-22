@@ -1,0 +1,506 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UiStrings_fr
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: cb21eb36931960641866102c3dec9063, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1770012672
+    m_Localized: Annuler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178496
+    m_Localized: Confirmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178497
+    m_Localized: Reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178498
+    m_Localized: Abandonner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178499
+    m_Localized: Joueur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178500
+    m_Localized: "Bient\xF4t disponible"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178501
+    m_Localized: TIC TAC XO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178502
+    m_Localized: Chargement...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178503
+    m_Localized: "Une erreur s'est produite. V\xE9rifiez votre connexion et r\xE9essayez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178504
+    m_Localized: "R\xE9essayer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178505
+    m_Localized: TIC TAC XO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178506
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178507
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795178508
+    m_Localized: Boutique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372800
+    m_Localized: "R\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372801
+    m_Localized: Choisissez un mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372802
+    m_Localized: Un joueur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372803
+    m_Localized: "Jouez contre l'IA \xB7 choisissez la difficult\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372804
+    m_Localized: 2 joueurs local
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372805
+    m_Localized: "M\xEAme appareil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372806
+    m_Localized: En ligne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372807
+    m_Localized: "Match rapide ou Class\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372808
+    m_Localized: "Bient\xF4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372809
+    m_Localized: "Le mode en ligne arrive bient\xF4t !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372810
+    m_Localized: Taille du plateau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372811
+    m_Localized: aligne {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372812
+    m_Localized: "Difficult\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372813
+    m_Localized: Facile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372814
+    m_Localized: Moyen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372815
+    m_Localized: Difficile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372816
+    m_Localized: Adaptative
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372817
+    m_Localized: "D\xE9marrer la partie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372818
+    m_Localized: Toi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372819
+    m_Localized: Adversaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372820
+    m_Localized: "L'IA r\xE9fl\xE9chit..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372821
+    m_Localized: Joueur 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372822
+    m_Localized: Joueur 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372823
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372824
+    m_Localized: "Tu gagnes ! \U0001F389"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372825
+    m_Localized: Tu perds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372826
+    m_Localized: Match nul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372827
+    m_Localized: Le Joueur 1 gagne !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372828
+    m_Localized: Le Joueur 2 gagne !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372829
+    m_Localized: "R\xE9compense"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372830
+    m_Localized: Revanche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372831
+    m_Localized: Accueil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372832
+    m_Localized: Profil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372833
+    m_Localized: '{0} Modifier le look {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372834
+    m_Localized: Taux de victoires
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372835
+    m_Localized: "S\xE9rie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372836
+    m_Localized: Historique des parties
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372837
+    m_Localized: "Supprimer mes donn\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372838
+    m_Localized: "Supprimer mes donn\xE9es ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372839
+    m_Localized: "Cela supprime d\xE9finitivement votre progression locale, votre
+      monnaie et votre historique de parties sur cet appareil. Cette action est irr\xE9versible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372840
+    m_Localized: Supprimer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372841
+    m_Localized: Historique des parties
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372842
+    m_Localized: Toutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372843
+    m_Localized: Solo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372844
+    m_Localized: Local
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372845
+    m_Localized: Aucune partie pour l'instant. Jouez une partie pour la voir ici
+      !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372846
+    m_Localized: Victoire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372847
+    m_Localized: "D\xE9faite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372848
+    m_Localized: Nul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372849
+    m_Localized: "Le Joueur 1 a gagn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372850
+    m_Localized: "Le Joueur 2 a gagn\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372851
+    m_Localized: '{0}m {1}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372852
+    m_Localized: '{0}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372853
+    m_Localized: "\xC0 l'instant"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372854
+    m_Localized: il y a {0}m
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372855
+    m_Localized: il y a {0}h
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372856
+    m_Localized: il y a {0}j
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372857
+    m_Localized: Boutique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372858
+    m_Localized: Pions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372859
+    m_Localized: Plateaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372860
+    m_Localized: FX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372861
+    m_Localized: Son
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372862
+    m_Localized: "Bient\xF4t disponible"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372863
+    m_Localized: "De nouveaux cosm\xE9tiques arrivent."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372864
+    m_Localized: "L'achat de monnaie arrive bient\xF4t !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372865
+    m_Localized: "R\xE9glages"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372866
+    m_Localized: Langue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372867
+    m_Localized: Son
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372868
+    m_Localized: Musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372869
+    m_Localized: "Supprimer le compte et les donn\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1799372870
+    m_Localized: "Supprimer le compte et les donn\xE9es ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208380964864
+    m_Localized: Match rapide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742080
+    m_Localized: Affrontez un adversaire en ligne maintenant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742081
+    m_Localized: "Class\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742082
+    m_Localized: "Classement comp\xE9titif"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742083
+    m_Localized: "Le mode Class\xE9 arrive bient\xF4t !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742084
+    m_Localized: Recherche d'un adversaire...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742085
+    m_Localized: "Connexion \xE0 la partie..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742086
+    m_Localized: "\xC7a prend trop de temps ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742087
+    m_Localized: Jouer contre l'IA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742088
+    m_Localized: "\u25C9 Connect\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742089
+    m_Localized: "\u25CC Connexion..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742090
+    m_Localized: "\u25CC Hors ligne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742091
+    m_Localized: Abandonner la partie ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742092
+    m_Localized: "Votre adversaire gagnera si vous partez maintenant. Cette action
+      est irr\xE9versible."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33208397742093
+    m_Localized: "Votre adversaire a quitt\xE9 la partie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955727769600
+    m_Localized: "Class\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546816
+    m_Localized: Classement (Ranked)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546817
+    m_Localized: "Class\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546818
+    m_Localized: Placement {0}/{1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546819
+    m_Localized: Bronze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546820
+    m_Localized: Argent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546821
+    m_Localized: Or
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546822
+    m_Localized: Platine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546823
+    m_Localized: Diamant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546824
+    m_Localized: Classement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546825
+    m_Localized: Chargement du classement...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546826
+    m_Localized: "Le classement Ranked n'est pas encore disponible ici. Revenez bient\xF4t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546827
+    m_Localized: "Aucun joueur class\xE9 pour l'instant sur ce plateau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5869955744546828
+    m_Localized: Terminez vos matchs de placement pour rejoindre le classement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106386268160
+    m_Localized: Avatar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045376
+    m_Localized: Cadre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045377
+    m_Localized: "Banni\xE8re"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045378
+    m_Localized: Pions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5898106403045379
+    m_Localized: Plateau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5904570035224576
+    m_Localized: "{0} Aller \xE0 la Boutique {1}"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
